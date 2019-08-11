@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="toolbarText">14sp</dimen>
+    <dimen name="title_text">20sp</dimen>
+    <dimen name="title_tag">14sp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="sub_title_text">16sp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <FrameLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+            <include android:id="@+id/toolbar"
+                layout="@layout/toolbar_main"/>
+            <include android:id="@+id/search_view"
+                layout="@layout/search_view"/>
+        </FrameLayout>
+        <TableLayout
+            android:id="@+id/category"
+            android:layout_below="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/recycler_view_item_background"
+            android:animateLayoutChanges="true"
+            android:stretchColumns="*">
+            <TableRow >
+                <Button android:id="@+id/food" android:text="Food" style="@style/TagButton"/>
+                <Button android:id="@+id/grocery" android:text="Grocery" style="@style/TagButton"/>
+                <Button android:id="@+id/medical" android:text="Medical" style="@style/TagButton"/>
+            </TableRow>
+        </TableLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_below="@+id/category"
+            android:layout_width="match_parent"
+            android:background="@color/recycler_view_background"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_upload"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</layout>

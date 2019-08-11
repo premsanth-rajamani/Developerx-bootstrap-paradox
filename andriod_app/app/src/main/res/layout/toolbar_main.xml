@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dimen_2dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Toolbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="left|center"
+            style="@style/Title"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:visibility="gone"
+            android:padding="@dimen/dimen_10dp"
+            android:tint="@color/colorAccent"
+            android:layout_gravity="right">
+
+        </ImageView>
+
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+</layout>

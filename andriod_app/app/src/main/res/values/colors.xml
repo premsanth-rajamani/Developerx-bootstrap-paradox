@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+
+    <color name="text_toolbar">#FFFFFF</color>
+    <color name="text_item">#111111</color>
+
+    <color name="search_drawable_tint">#111111</color>
+    <color name="recycler_view_item_background">#fefefe</color>
+    <color name="recycler_view_background">#ffffff</color>
+
+</resources>

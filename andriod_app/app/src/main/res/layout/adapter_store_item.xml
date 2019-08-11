@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/store_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginBottom="@dimen/dimen_1dp"
+        android:background="@color/recycler_view_item_background"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SubTitle"
+            android:text="Store Name"/>
+        <TextView
+            android:id="@+id/verified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_2dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_verified"
+            android:text="Verified"/>
+    </LinearLayout>
+</layout>
